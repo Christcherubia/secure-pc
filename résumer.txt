@@ -1,0 +1,51 @@
+!!! Procédure de Sécuritée !!!
+
+******************************************
+En ce qui concerne le MDP "FORT"
+je vous conseil ce style de mot de passe :
+
+LakaloMhvX86 ou encore =>
+
+JesuisUnGrosRigoloQuiUtiliseDesMotsdePasseCassable-!
+
+Ok€étè^nBloçX84 = ça c'est beaucoup plus fort que celui si dessus et OUI !!!
+(car les hackers malveillant utilises ce qu'on appel des "wordlist" dictionnaire de mot de passe {j'en parle dans une vidéo sur "crunch"})
+
+
+-------------------------------------
+
+Sécurité WIFI WPA2 :
+En vrais si votre opérateur internet ne vous fourni pas une protection Protocole WPA2,
+Changer d'opérateur tout simplement ; c'est la norme acctuel (le WPA1 n'est plus sécurisé depuis des années) !!!
+
+-------------------------------------------
+
+Surveillance des Journeaux/Système
+
+Ici en réalité avec le part feu qu'on à mis en place la Surveillance est seulement pour
+moi je dirais du finiolage XD
+Vous pouvez aller voir ces outils par exemple ...
+
+-------------------------------------------
+Anti Virus :
+
+Personnellement étant donné que j'utilise Catchy OS qui est pour l'instant trop peu connu
+et hyper sécurisé, de plus sous GNU/Linux,
+je n'utilise pas d'anti malware
+Ce serait pour moi une prise de l'espace disque inutile !
+
+Faites comme bon vous semble. En tout cas si besoin, "ClamAV" est Super efficace et OpenSource !!!
+Si non vous avez aussi Eset NOD32 qui est vraiment bien.
+
+------------------------------------------
+MDP BIOS
+Pour changer le mot de passe bios, je vous met une capture ici =>
+et un récapitulatif en description ;)
+
+-------------------------------------
+Sensibilisation À La Sécurité :
+
+Éduquez-vous et les autres utilisateurs sur les bonnes pratiques de sécurité informatique, comme ne pas cliquer sur des liens suspects ou ne pas télécharger de logiciels provenant de sources non fiables.
+
+En prenant ces mesures, vous pouvez renforcer la sécurité de votre PC sous N'importe quel Système d'exploitation (OS)
+et réduire les risques d'exploitation ou d'intrusion.

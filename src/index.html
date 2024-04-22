@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sécuriser ton pc avec efficacité en 10 étapes</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div id="main">
+        <header><h1>SÉCURISER VOTRE PC COMME UN PRO : 10 ÉTAPES CONTRE TOUS TYPES D'ATTAQUES !</h1></header>
+
+        <h2>Pour sécuriser votre PC sous Cathy OS (basé sur Arch Linux), voici une liste de mesures que vous pouvez prendre :</h2>
+        <div class="box-paragraphe-content">
+            <p>
+                1) Mises à jour régulières : Assurez-vous que votre système est toujours à jour en installant les mises à jour de sécurité et les correctifs logiciels dès qu'ils sont disponibles.<br>
+                2) Utilisation d'un pare-feu : Configurez un pare-feu pour contrôler le trafic entrant et sortant de votre système. Vous pouvez utiliser des outils comme UFW (Uncomplicated Firewall) pour simplifier ce processus.<br>
+                3) Gestion des utilisateurs : Créez des comptes utilisateurs séparés pour chaque personne utilisant le système et limitez les privilèges administratifs uniquement aux utilisateurs nécessaires.<br>
+                4) Mot de passe fort : Utilisez un mot de passe fort pour votre compte utilisateur et, si possible, activez le chiffrement du disque dur pour protéger les données sensibles.<br>
+                5) Sécurisation du réseau : Utilisez des protocoles de sécurité comme WPA2 pour votre réseau Wi-Fi et évitez de vous connecter à des réseaux Wi-Fi publics non sécurisés.<br>
+                6) Surveillance des journaux : Surveillez les journaux système pour détecter les activités suspectes ou les tentatives d'intrusion.<br>
+                7) Chiffrement des communications : Utilisez des protocoles de chiffrement comme HTTPS pour naviguer sur le Web de manière sécurisée et utilisez des outils de messagerie sécurisée pour les communications sensibles.<br>
+                8) Protection contre les logiciels malveillants : Installez et utilisez des logiciels antivirus et des outils de détection des logiciels malveillants pour protéger votre système contre les menaces en ligne.<br>
+                9) Restrictions d'accès physique : Protégez physiquement votre ordinateur en utilisant un mot de passe BIOS, en verrouillant votre ordinateur lorsque vous n'êtes pas dessus, et en limitant l'accès physique à votre matériel.<br>
+                10) Sensibilisation à la sécurité : Éduquez-vous et les autres utilisateurs sur les bonnes pratiques de sécurité informatique, comme ne pas cliquer sur des liens suspects ou ne pas télécharger de logiciels provenant de sources non fiables.<br>
+                    <br>
+                    <i>En prenant ces mesures, vous pouvez renforcer la sécurité de votre PC sous Cathy OS et réduire les risques d'exploitation ou d'intrusion.</i>
+            </p>
+        </div>
+            <h2>Sur GNU/Linux, y compris les distributions basées sur Arch Linux, les besoins en antivirus sont généralement moindres par rapport à d'autres systèmes d'exploitation tels que Windows. <br> 
+                Cependant, il existe quelques options si vous souhaitez ajouter une couche supplémentaire de protection :</h2>
+            
+                
+                <ul class="box-list">
+                    <li><strong>ClamAV</strong> : C'est un antivirus open source populaire pour GNU/Linux. <br> 
+                        Il peut être utilisé pour scanner les fichiers et les e-mails à la recherche de logiciels malveillants.<br> 
+                        Il est disponible dans les dépôts officiels d'Arch Linux.</li>
+                    <li><strong>Sophos Antivirus</strong> : Sophos propose une version gratuite de son antivirus pour les particuliers sur Linux.<br> 
+                        Il peut être téléchargé depuis leur site Web et installé sur votre système.</li>
+                    <li><strong>ESET NOD32</strong> : ESET propose également une version de son antivirus pour Linux.<br> 
+                        Il offre une protection contre les virus, les logiciels espions et d'autres menaces en ligne.</li>
+                </ul>
+
+
+                <p>
+                        Il est important de noter que même si l'utilisation d'un antivirus peut offrir une certaine tranquillité d'esprit, la meilleure protection sur GNU/Linux reste la prudence lors de la navigation sur Internet et le téléchargement de logiciels à partir de sources fiables. De plus, maintenir votre système à jour avec les dernières mises à jour de sécurité est crucial pour réduire les risques d'exploitation.
+                </p>
+
+                <h2>
+                    Configurer le pare-feu Uncomplicated Firewall (UFW) sur Arch Linux est relativement simple. <br> 
+                    Voici comment procéder :</h2>
+
+                    <ul class="box-list">
+                        <li>* Installation de UFW : Si ce n'est pas déjà fait, installez UFW en utilisant le gestionnaire de paquets Pacman : <br>
+                            bash<br>
+                            Copy code<br>
+                            sudo pacman -S ufw</li><br>
+                        <li>* Activer UFW : Après l'avoir installé, activez UFW en exécutant la commande suivante :<br>
+                            bash<br>
+                            Copy code<br>
+                            sudo ufw enable</li><br>
+                        <li>* Configurer les règles : Vous pouvez maintenant configurer les règles de pare-feu en utilisant les commandes UFW.<br> 
+                            Par exemple, pour autoriser le trafic SSH, vous pouvez exécuter :<br>
+                            bash<br>
+                            Copy code<br>
+                            sudo ufw allow ssh<br>
+                            Pour autoriser d'autres services, remplacez "ssh" par le nom du service. Par exemple, pour autoriser le trafic HTTP (port 80) :
+                            <br><br>
+                            bash<br>
+                            Copy code<br>
+                            sudo ufw allow http</li><br>
+                        <li>* Vérifier l'état : Une fois que vous avez configuré vos règles, vous pouvez vérifier l'état du pare-feu avec :<br> 
+                            bash<br> 
+                            Copy code<br> 
+                            sudo ufw status<br> 
+                            Cela vous montrera les règles actives et l'état du pare-feu.</li><br>
+                        <li>* Configurer les règles par défaut : Par défaut, UFW bloque tout le trafic entrant.<br>
+                            Vous pouvez spécifier le comportement par défaut en utilisant les commandes :<br>
+                            bash<br>
+                            Copy code<br>
+                            sudo ufw default allow   # Autoriser tout le trafic entrant (déconseillé sauf si vous avez des règles spécifiques)<br>
+                            ou
+                            <br><br>
+                            bash<br>
+                            Copy code<br>
+                            sudo ufw default deny    # Bloquer tout le trafic entrant (configuration la plus sécurisée par défaut)</li><br>
+                        <li>* Configurer les règles de sortie : UFW permet également de contrôler le trafic sortant.<br>
+                            Par exemple, pour autoriser le trafic sortant vers une adresse IP spécifique :<br>
+                            bash<br>
+                            Copy code<br>
+                            sudo ufw allow out to <adresse_IP></li> <br>
+                        <li>* Configurer d'autres règles personnalisées : Vous pouvez également configurer des règles personnalisées en spécifiant le numéro de port ou le protocole.<br>
+                            Par exemple, pour autoriser le trafic sur le port 123/UDP :<br>
+                            bash<br>
+                            Copy code<br>
+                            sudo ufw allow 123/udp<br>
+                            Assurez-vous de bien comprendre les implications de chaque règle que vous configurez pour éviter de bloquer accidentellement le trafic nécessaire à votre système.
+                            <br><br>
+                            Une fois que vous avez configuré vos règles, UFW les appliquera automatiquement. <br>
+                            Vous pouvez également redémarrer UFW pour appliquer les changements avec la commande :<br>
+                            <br>
+                            bash<br>
+                            Copy code<br>
+                            sudo ufw reload</li>
+                    </ul>
+                    <p>
+                        C'est ainsi que vous pouvez configurer le pare-feu UFW sur votre système Arch Linux.
+                    </p>
+
+                    <h2>Pour mettre un mot de passe dans le BIOS de votre ordinateur, suivez ces étapes générales.<br> 
+                        Veuillez noter que les menus et options peuvent varier légèrement en fonction de votre fabricant de BIOS :</h2>
+
+                    <h2>Voici un résumé des étapes pour définir un mot de passe BIOS :</h2>
+                    <ul class="box-list">
+                        <ol>1 - Redémarrez votre ordinateur pour accéder au BIOS.
+                        </ol>
+                        <ol>2 - Accédez au BIOS en appuyant sur la touche spécifiée lors du démarrage (F2, F10, Suppr, etc.).
+                        </ol>
+                        <ol>3 - Naviguez dans les menus pour trouver l'option de sécurité ou de mot de passe.
+                        </ol>
+                        <ol>4 - Définissez le mot de passe en suivant les instructions à l'écran.
+                        </ol>
+                        <ol>5 - Enregistrez et quittez le BIOS après avoir défini le mot de passe.
+                        </ol>
+                        <ol>6 - Redémarrez votre ordinateur et souvenez-vous du mot de passe que vous avez défini.
+                        </ol>
+                    </ul>
+
+                    <h2>Voici quelques points de comparaison entre Windows et une distribution GNU/Linux, <br> 
+                        comme Arch Linux, en ce qui concerne la sécurité informatique :</h2>
+
+                    <div class="box-paragraphe-content">
+                       <strong>Modèle de développement ouvert :</strong> Les distributions GNU/Linux sont développées de manière ouverte et transparente, permettant à la communauté de contribuer à l'identification et à la correction des vulnérabilités de sécurité.<br>
+                         Cela signifie qu'il y a généralement une réactivité plus rapide aux failles de sécurité et un processus de correction plus transparent que celui de Windows, qui est un système propriétaire développé par Microsoft.<br>
+                         <br>
+                         <strong>Système de gestion des paquets :</strong> Les distributions GNU/Linux utilisent généralement un système de gestion des paquets qui facilite la mise à jour et l'installation sécurisée des logiciels.<br> 
+                        Les paquets sont généralement vérifiés et signés numériquement pour garantir leur authenticité, réduisant ainsi les risques de téléchargement de logiciels malveillants.<br>
+                        <br>
+                        <strong>Permissions utilisateur :</strong> Les systèmes GNU/Linux sont basés sur un modèle de permissions utilisateur robuste, où les utilisateurs standard n'ont pas les privilèges administratifs par défaut.<br> 
+                        Cela limite les risques liés à l'exécution de logiciels malveillants ou à la modification non autorisée du système.<br>
+                        <br>
+                        <strong>Personnalisation et contrôle :</strong> GNU/Linux offre généralement plus de possibilités de personnalisation et de contrôle que Windows, <br>
+                        ce qui permet aux utilisateurs de configurer leur système de manière à renforcer la sécurité selon leurs besoins spécifiques.<br>
+                        <br>
+                       <strong>Diversité des distributions et des environnements de bureau :</strong> La diversité des distributions GNU/Linux et des environnements de bureau disponibles permet aux utilisateurs de choisir une distribution qui correspond le mieux à leurs besoins en matière de sécurité et de confidentialité.<br>
+                        <br>
+                        <strong>Logiciels open source :</strong> De nombreux logiciels disponibles sur GNU/Linux sont open source, ce qui signifie que leur code source est accessible et peut être examiné par la communauté pour identifier et corriger les failles de sécurité.<br>
+                        Cela offre une transparence et une confiance accrues dans la sécurité des logiciels utilisés.<br>
+                        <br>
+                       <i>Cependant, il est important de noter que la sécurité informatique dépend également de la façon dont l'utilisateur configure et utilise son système, <br> 
+                        quel que soit le système d'exploitation. Ainsi, bien que GNU/Linux puisse offrir certaines avantages en matière de sécurité,<br> 
+                        il est essentiel pour les utilisateurs de suivre les bonnes pratiques de sécurité quel que soit le système d'exploitation qu'ils utilisent.</i> 
+                    </div>
+    </div>
+
+</body>
+</html>
